@@ -107,13 +107,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Scripts\angular-route.js" />
-    <Content Include="Scripts\angular-route.min.js" />
-    <Content Include="Scripts\Controllers\LandingPageController.js" />
-    <Content Include="Scripts\Menu1.js" />
-    <Content Include="Scripts\NuGet\angular-mocks.js" />
-    <Content Include="Scripts\NuGet\angular.js" />
-    <Content Include="Scripts\NuGet\angular.min.js" />
+    <Content Include="Info\MiInfo.txt" />
+    <Content Include="Models\Scripts\angular-route.js" />
+    <Content Include="Models\Scripts\angular-route.min.js" />
+    <Content Include="Models\Scripts\Controllers\LandingPageController.js" />
+    <Content Include="Models\Scripts\Menu1.js" />
+    <Content Include="Models\Scripts\NuGet\angular-mocks.js" />
+    <Content Include="Models\Scripts\NuGet\angular.js" />
+    <Content Include="Models\Scripts\NuGet\angular.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -124,14 +125,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Scripts\Controllers\RoutesDemoController.cs" />
+    <Compile Include="Models\Scripts\Controllers\RoutesDemoController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\NuGet\angular.min.js.map" />
-    <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="Models\Scripts\NuGet\angular.min.js.map" />
+    <Content Include="Models\Scripts\angular-route.min.js.map" />
     <Content Include="Views\RoutesDemo\One.cshtml" />
     <Content Include="Views\RoutesDemo\Two.cshtml" />
     <Content Include="Views\RoutesDemo\Three.cshtml" />
@@ -144,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
