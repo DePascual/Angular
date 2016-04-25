@@ -1,0 +1,5 @@
+﻿Link para ver el tutorial
+http://www.codeproject.com/Articles/806029/Getting-started-with-AngularJS-and-ASP-NET-MVC-Par
+
+Añadir el BundleConfig.cs en el proyecto
+http://stackoverflow.com/questions/21668280/how-do-i-add-bundleconfig-cs-to-my-project
