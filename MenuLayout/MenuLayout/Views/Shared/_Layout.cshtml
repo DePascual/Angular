@@ -1,0 +1,38 @@
+﻿@using System.Web.Optimization;
+<!DOCTYPE html>
+<html ng-app="MenuLayout" ng-controller="LandingPageController">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU LAYOUT ANGULAR</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/#/routeOne">Route One</a></li>
+                        <li><a href="/#/routeTwo">Route Two</a></li>
+                        <li><a href="/#/routeThree">Route Three</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="body" data-ng-view class="container">
+        @RenderBody()
+    </div>
+
+    @*Renderiza lo que hay en Home/Index*@
+
+    @Scripts.Render("~/bundles/libraries")
+    @Scripts.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/MenuLayout")
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
