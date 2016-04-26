@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Menu1.Scripts.Controllers
+namespace Menu1.Controllers
 {
     public class RoutesDemoController : Controller
     {
+        // GET: RoutesDemo
         public ActionResult One()
         {
             return View();

@@ -15,11 +15,16 @@ namespace Menu1.App_Start
 
             BundleTable.EnableOptimizations = true;
 
+
+            bundles.Add(
+               new ScriptBundle("~/bundles/MenuLayout")
+                   .Include("~/Scripts/MenuLayout/MenuLayout.js")
+                   .IncludeDirectory("~/Scripts/Controllers", "*.js")
+               );
+
             bundles.Add(new ScriptBundle("~/bundles/Menu1")
                 .IncludeDirectory("~/Scripts/Controllers", "*.js")
-                .Include("~/Scripts/Menu1.js"));
-
-     
+                .Include("~/Scripts/Menu1.js"));     
         }
     }
 }
