@@ -28,11 +28,16 @@ namespace MenuLayout.App_Start
                 );
 
             //including the javascript files in our app
-            bundles.Add(
-                new ScriptBundle("~/bundles/MenuLayout")
-                    .Include("~/Scripts/MenuLayout/MenuLayout.js")
-                    .IncludeDirectory("~/Scripts/Controllers", "*.js")
-                );
+            //bundles.Add(
+            //    new ScriptBundle("~/bundles/MenuLayout")
+            //        .Include("~/Scripts/MenuLayout/MenuLayout.js")
+            //        .IncludeDirectory("~/Scripts/Controllers", "*.js")
+            //    );
+
+            bundles.Add(new ScriptBundle("~/bundles/MenuLayout")
+                .IncludeDirectory("~/Scripts/Controllers", "*.js")
+                .Include("~/Scripts/MenuLayout/MenuLayout.js"));
+
         }
     }
 }
