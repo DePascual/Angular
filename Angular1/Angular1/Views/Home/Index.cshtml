@@ -1,0 +1,23 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+
+<html >
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cuaderno Alumnos</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/styles.css" />
+</head>
+<body ng-app="cuaderno" ng-controller="alumnosController">
+    <div class="wrapper">
+        <h1>CUADERNO ALUMNOS</h1>
+        <div class="contact-item" ng-repeat="alumno in alumnos">
+            {{alumno.nombre}} - {{alumno.telefono}} - {{alumno.curso}}
+        </div>
+    </div>
+    @Scripts.Render("~/Scripts/angular.js")
+    @Scripts.Render("~/Scripts/angular-route.js")
+    @Scripts.Render("~/Scripts/angular-resource.js")
+    @Scripts.Render("~/Scripts/misScripts.js")
+
+</body>
+</html>
