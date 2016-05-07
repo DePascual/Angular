@@ -1,0 +1,27 @@
+﻿
+<div class="jumbotron text-center" ng-controller="loginCtrl">
+    <h1>LOGIN</h1>
+    <div class="contact-item" ng-repeat="alumno in alumnos | orderBy: 'nombre'">
+        <div class="nombre">{{alumno.nombre}} - {{alumno.telefono}}</div>
+        <span class="curso">{{alumno.curso}}</span>
+    </div>
+
+    <hr />
+
+    <div class="from-group" ng-controller="loginCtrl">
+        <div name="loginForm">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" ng-model="uName" required/>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" ng-model="uPass" required/>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-default" ng-click="logear()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+

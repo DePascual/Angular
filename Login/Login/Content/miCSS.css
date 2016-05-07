@@ -1,0 +1,7 @@
+﻿.ng-valid{
+    border: thin solid #4cff00;
+}
+
+.ng-invalid{
+    border: thin solid #990000;
+}
