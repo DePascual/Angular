@@ -4,11 +4,21 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Login.Models;
+using MongoDB.Driver.Linq;
 
 namespace Login.Controllers
 {
     public class HomeController : Controller
     {
+
+        private MongoDBcontext _dbContext;
+        public HomeController()
+        {
+            _dbContext = new MongoDBcontext();
+        }
+
+
+
         // GET: Home
         public ActionResult Index()
         {
@@ -33,9 +43,12 @@ namespace Login.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(Usuario usuario)
+        public bool Login(Usuario usuario)
         {
-            return View();
+            var existeUsu = false;
+            var collection = _dbContext.GetDatabase().GetCollection<Usuario>("login");
+
+             return existeUsu = collection.AsQueryable().Where(x => x.username == usuario.username && x.password == usuario.password).Any() ? existeUsu = true : existeUsu = false;
         }
     }
 }

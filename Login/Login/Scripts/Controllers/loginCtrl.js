@@ -12,17 +12,13 @@
            var getData = loginService.UserLogin(usuario);
 
            getData.then(function (msg) {
-               if (msg.data == "0") {
-                   alert("Password Incorrect !");
-               }
-               else if (msg.data == "-1") {
-                  alert("Username Incorrect !");
+               if (msg.data == "False") {
+                   alert("Upppsss Incorrect !");
                }
                else {
-                   alert("OK")
+                   alert("OK");
+                   window.location.href = "/ZonaUsuarios/Index";
                }
            })
-
-           //alert(JSON.stringify(usuario))
         }
     });

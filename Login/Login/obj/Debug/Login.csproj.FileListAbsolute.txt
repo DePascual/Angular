@@ -44,3 +44,12 @@ E:\ProyectosCarol\Angular\Login\Login\bin\es\System.Web.Mvc.resources.dll
 E:\ProyectosCarol\Angular\Login\Login\obj\Debug\Login.csprojResolveAssemblyReference.cache
 E:\ProyectosCarol\Angular\Login\Login\obj\Debug\Login.dll
 E:\ProyectosCarol\Angular\Login\Login\obj\Debug\Login.pdb
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Bson.dll
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Driver.Core.dll
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Driver.dll
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Driver.GridFS.dll
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Driver.Legacy.dll
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Bson.xml
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Driver.xml
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Driver.GridFS.xml
+E:\ProyectosCarol\Angular\Login\Login\bin\MongoDB.Driver.Legacy.xml
