@@ -13,12 +13,22 @@
 
            getData.then(function (msg) {
                if (msg.data == "False") {
-                   alert("Upppsss Incorrect !");
+                   //alert("Upppsss Incorrect !");                  
+                   $("#alertModal").modal('show');
+                   $scope.info = "Upss Incorrect !";
+
                }
                else {
                    alert("OK");
                    window.location.href = "/ZonaUsuarios/Index";
                }
            })
-        }
+       }
+
+       $scope.alertmsg = function () {
+           $("#alertModal").modal('hide');
+           $('#uName').removeClass('ng-valid').addClass('ng-invalid');
+           $('#uPass').removeClass('ng-valid').addClass('ng-invalid');
+       };
+
     });
